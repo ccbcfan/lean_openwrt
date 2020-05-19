@@ -14,4 +14,4 @@
 # Add a feed source (passwall.ipk)
 sed -i '$a src-git kenzok8 https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
-sed -i '$a src-git lean/luci-app-dockerman https://github.com/lisaac/luci-app-dockerman' feeds.conf.default
+sed -i '$a src-git luci-app-dockerman https://github.com/lisaac/luci-app-dockerman' feeds.conf.default
