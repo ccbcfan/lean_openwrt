@@ -15,7 +15,7 @@
 sed -i '$a src-git kenzok8 https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 #sed -i '$a src-git luci-app-dockerman https://github.com/lisaac/luci-app-dockerman' feeds.conf.default
-git clone https://github.com/lisaac/luci-app-dockerman
-git clone https://github.com/kenzok8/small 
-git clone https://github.com/kenzok8/openwrt-packages
-git clone https://github.com/Lienol/openwrt-package 
+git clone https://github.com/lisaac/luci-app-dockerman package/luci-app-dockerman
+git clone https://github.com/kenzok8/small package/kenzol8/small
+git clone https://github.com/kenzok8/openwrt-packages package/kenzol8/package
+git clone https://github.com/Lienol/openwrt-package/lienol package/lienol
