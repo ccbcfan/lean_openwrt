@@ -18,4 +18,4 @@ sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 git clone https://github.com/lisaac/luci-app-dockerman package/luci-app-dockerman
 git clone https://github.com/kenzok8/small package/kenzol8/small
 git clone https://github.com/kenzok8/openwrt-packages package/kenzol8/package
-git clone https://github.com/Lienol/openwrt-package/tree/master/lienol package/lienol
+git clone https://github.com/Lienol/openwrt-package package/lienol
