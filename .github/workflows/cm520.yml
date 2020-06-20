@@ -24,7 +24,8 @@ on:
 
 env:
   
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/ccbcfan/lean_openwrt
+  ##REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: cm520.config
