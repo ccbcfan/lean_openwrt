@@ -64,7 +64,7 @@
 			leases     = stat.dhcp_leases(),
 			leases6    = stat.dhcp6_leases(),
 			wifinets   = stat.wifi_networks(),
-			temperinfo = luci.util.exec("sensors  | grep -E 'temp1|temp2|Package|Core' | sed 's/temp2/<br>temp2/g' | sed 's/Package/<br>Package/g' | sed 's/Core/<br>Core/g' "), 
+			temperinfo = luci.util.exec("sensors  | grep 'temp1' | cut -c15-24 "), 
 			buildinfo = " 2020-06-21  Build  By  ccbcfan "
 		}
 
