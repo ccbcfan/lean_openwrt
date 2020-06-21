@@ -20,3 +20,4 @@ git clone https://github.com/kenzok8/small package/kenzol8/small
 git clone https://github.com/kenzok8/openwrt-packages package/kenzol8/package
 git clone https://github.com/Lienol/openwrt-package package/lienol
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
+git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
