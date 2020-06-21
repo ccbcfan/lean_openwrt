@@ -65,7 +65,7 @@
 			leases6    = stat.dhcp6_leases(),
 			wifinets   = stat.wifi_networks(),
 			temperinfo = luci.util.exec("sensors  | grep -E 'temp1|temp2|Package|Core' | sed 's/temp2/<br>temp2/g' | sed 's/Package/<br>Package/g' | sed 's/Core/<br>Core/g' "), 
-			buildinfo = " 2020-06-21  Build  By  cbcfan "
+			buildinfo = " 2020-06-21  Build  By  ccbcfan "
 		}
 
 		if wan then
@@ -715,7 +715,7 @@
 		<tr><td width="33%"><%:Load Average%></td><td id="loadavg">-</td></tr>
 		<tr><td width="33%"><%:CPU usage (%)%></td><td id="cpuusage">-</td></tr>
 		<tr><td width="33%"><%:CPU 温  度（°C）%></td><td id="temperatue">-</td></tr>
-		<tr><td width="33%"><%:固件编译信息%></td><td id="buildinfo">-</td></tr>
+		<tr><td width="33%"><%:固件信息%></td><td id="buildinfo">-</td></tr>
 	</table>
 </fieldset>
 
