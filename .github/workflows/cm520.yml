@@ -81,9 +81,9 @@ jobs:
     - name: 加载diy-lede.sh跟feeds.conf.default设置
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
-        chmod +x $DIY_OP_SH
+        chmod +x $DIY_P1_SH
         cd openwrt
-        $GITHUB_WORKSPACE/$DIY_OP_SH
+        $GITHUB_WORKSPACE/$DIY_P1_SH
     - name: 下载diy-lede.sh跟feeds.conf.default自定义软件
       run: cd openwrt && ./scripts/feeds update -a
 
@@ -94,6 +94,10 @@ jobs:
       run: |
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
+        chmod +x $DIY_P2_SH
+        cd openwrt
+        $GITHUB_WORKSPACE/$DIY_P2_SH
+    
     - name: SSH远程连接服务器配置固件
       uses: P3TERX/debugger-action@main
       if: env.SSH_ACTIONS == 'true' || contains(github.event.action, 'ssh')
